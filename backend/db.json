@@ -1,0 +1,261 @@
+{
+  "users": [
+    {
+      "id": 1772078520093,
+      "username": "draco12",
+      "password": "112233",
+      "inviteCode": "129001",
+      "balance": "635.45",
+      "todayCommission": "249.10",
+      "totalOrders": 17,
+      "cycleOrders": 12,
+      "cashGap": "0.00",
+      "traps": [
+        {
+          "taskNum": 12,
+          "trapAmount": 570.23,
+          "trapPercent": 11
+        }
+      ],
+      "walletAddress": "Tmytrcawoidjawiodjwakdmnwkl",
+      "isFrozen": false
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1772083067651,
+      "userId": 1772078520093,
+      "productName": "Women’s 925 Sterling Silver Hoop",
+      "productImg": "/products/womens-925-sterling-silver-classic-2-inch-large-round-hoop.webp.webp",
+      "amount": "2532.93",
+      "commission": "120.96",
+      "date": "26/02/2026, 06:17:47",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083093292,
+      "userId": 1772078520093,
+      "productName": "Cute Mini Purse Bag for Girls",
+      "productImg": "/products/28.jpg",
+      "amount": "752.96",
+      "commission": "37.14",
+      "date": "26/02/2026, 06:18:13",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083099958,
+      "userId": 1772078520093,
+      "productName": "Armor All Car Cleaning Wipes",
+      "productImg": "/products/15.jpg",
+      "amount": "5468.33",
+      "commission": "1040.08",
+      "date": "26/02/2026, 06:18:19",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083142795,
+      "userId": 1772078520093,
+      "productName": "Accutime Sanrio Hello Kitty Girls' Watch",
+      "productImg": "/products/25.jpg",
+      "amount": "674.23",
+      "commission": "28.50",
+      "date": "26/02/2026, 06:19:02",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083209375,
+      "userId": 1772078520093,
+      "productName": "Bengoo G9000 Stereo Gaming Headset",
+      "productImg": "/products/bengoo-g9000-stereo-gaming-headset-for-ps4-pc-xbox-one-ps5-controller.webp-1.jpg",
+      "amount": "2050.00",
+      "commission": "410.00",
+      "date": "26/02/2026, 06:20:09",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083309272,
+      "userId": 1772078520093,
+      "productName": "Beyond Black Beauty TV Series",
+      "productImg": "/products/beyond-black-beauty-tv-series.webp-1.jpg",
+      "amount": "50.62",
+      "commission": "1.89",
+      "date": "26/02/2026, 06:21:49",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083315699,
+      "userId": 1772078520093,
+      "productName": "Ultra Pro — 3×4 35pt Toploaders",
+      "productImg": "/products/ultra-pro-3x4-35pt-toploaders-4-packs-of-25.webp-1.jpg",
+      "amount": "48.50",
+      "commission": "1.88",
+      "date": "26/02/2026, 06:21:55",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083324028,
+      "userId": 1772078520093,
+      "productName": "Bounty Essentials Select-A-Size Paper Towels",
+      "productImg": "/products/18.jpg",
+      "amount": "100.00",
+      "commission": "20.00",
+      "date": "26/02/2026, 06:22:04",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083877717,
+      "userId": 1772078520093,
+      "productName": "Nautilus Skidbuster Oxford",
+      "productImg": "/products/nautilus-skidbuster-oxford-slip-resistant-n5020-mens.jpg",
+      "amount": "9.78",
+      "commission": "0.38",
+      "date": "26/02/2026, 06:31:17",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083884766,
+      "userId": 1772078520093,
+      "productName": "Crocs Baby Classic Littles Clogs",
+      "productImg": "/products/24.jpg",
+      "amount": "3.41",
+      "commission": "0.17",
+      "date": "26/02/2026, 06:31:24",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083891704,
+      "userId": 1772078520093,
+      "productName": "Face Mask (3-Ply, Earloop)",
+      "productImg": "/products/face-mask-3ply-earloop-non-medical.web.jpg",
+      "amount": "16.68",
+      "commission": "0.36",
+      "date": "26/02/2026, 06:31:31",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083923535,
+      "userId": 1772078520093,
+      "productName": "Owl Statue — Home Decor",
+      "productImg": "/products/owl-statue-home-decor-accents-shelf-bookshelf-bedroom.webp-1.jpg",
+      "amount": "102.96",
+      "commission": "2.20",
+      "date": "26/02/2026, 06:32:03",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083930835,
+      "userId": 1772078520093,
+      "productName": "SHOC Zero G Plus Visor - Clear",
+      "productImg": "/products/9.webp",
+      "amount": "41.87",
+      "commission": "1.32",
+      "date": "26/02/2026, 06:32:10",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083951920,
+      "userId": 1772078520093,
+      "productName": "Freedom Charlie Kirk Sweatshirt — Unisex",
+      "productImg": "/products/freedom-charlie-kirk-sweatshirt-unisex-free.webp.webp",
+      "amount": "44.03",
+      "commission": "1.84",
+      "date": "26/02/2026, 06:32:31",
+      "status": "Completed"
+    },
+    {
+      "id": 1772083960972,
+      "userId": 1772078520093,
+      "productName": "Oura Ring Gen3 Heritage - Very Good",
+      "productImg": "/products/1.jpg",
+      "amount": "1000.00",
+      "commission": "152.50",
+      "date": "26/02/2026, 06:32:40",
+      "status": "Completed"
+    },
+    {
+      "id": 1772084173878,
+      "userId": 1772078520093,
+      "productName": "Ultra Pro — 3×4 35pt Toploaders",
+      "productImg": "/products/ultra-pro-3x4-35pt-toploaders-4-packs-of-25.webp-1.jpg",
+      "amount": "125.20",
+      "commission": "3.83",
+      "date": "26/02/2026, 06:36:13",
+      "status": "Completed"
+    },
+    {
+      "id": 1772084180866,
+      "userId": 1772078520093,
+      "productName": "Riddell Foundation ADLT M (Rev Speed) 2020 Gold R41179",
+      "productImg": "/products/4.webp",
+      "amount": "570.23",
+      "commission": "62.73",
+      "date": "26/02/2026, 06:36:20",
+      "status": "Completed"
+    }
+  ],
+  "deposits": [
+    {
+      "id": 1772078878742,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 50,
+      "status": "rejected",
+      "timestamp": 1772078878742
+    },
+    {
+      "id": 1772078937829,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 100,
+      "status": "approved",
+      "timestamp": 1772078937829
+    },
+    {
+      "id": 1772083052067,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 3000,
+      "status": "approved",
+      "timestamp": 1772083052067
+    },
+    {
+      "id": 1772083219495,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 5000,
+      "status": "approved",
+      "timestamp": 1772083219495
+    },
+    {
+      "id": 1772083344619,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 28,
+      "status": "pending",
+      "timestamp": 1772083344619
+    },
+    {
+      "id": 1772083355335,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 10,
+      "status": "approved",
+      "timestamp": 1772083355335
+    },
+    {
+      "id": 1772083902347,
+      "userId": 1772078520093,
+      "username": "draco12",
+      "amount": 100,
+      "status": "approved",
+      "timestamp": 1772083902347
+    }
+  ],
+  "depositConfig": {
+    "trcAddress": "TNRaQap1rnLHG486ZHd16bYEMznDKxGqRU",
+    "qrUrl": "https://api.qrcode-monkey.com/tmp/d468445c93873c2cea7281627f2e531a.svg?1770880357069",
+    "securityPin": "1234"
+  },
+  "withdrawals": [],
+  "csLink": "https://t.me/RgCustomerS12"
+}
