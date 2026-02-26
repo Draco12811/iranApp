@@ -31,7 +31,7 @@ export default function Wallet() {
       try {
 
         const res = await fetch(
-          `http://66.42.56.21:5000/api/user/wallet/${userId}`
+          `https://iran-backend.onrender.com0/api/user/wallet/${userId}`
         );
 
         const data = await res.json();
@@ -87,7 +87,7 @@ export default function Wallet() {
     try {
 
       const res = await fetch(
-        "http://66.42.56.21:5000/api/user/bind-wallet",
+        "https://iran-backend.onrender.com0/api/user/bind-wallet",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

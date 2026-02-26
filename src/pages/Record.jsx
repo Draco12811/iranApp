@@ -10,7 +10,7 @@ export default function Record() {
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState("");
 
-  const API_URL = "http://66.42.56.21:5000/api";
+  const API_URL = "https://iran-backend.onrender.com0/api";
   const storedUser = JSON.parse(localStorage.getItem("user") || "null");
 
   const fetchData = async () => {

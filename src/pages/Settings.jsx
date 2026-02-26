@@ -61,7 +61,7 @@ export default function Settings() {
       }
 
       const res = await axios.post(
-        "http://66.42.56.21:5000/api/user/change-password",
+        "https://iran-backend.onrender.com0/api/user/change-password",
         {
           userId: uid,
           currentPassword: passData.current,

@@ -21,7 +21,7 @@ export default function PaymentInfo() {
 
   // 🔥 LOAD WALLET CONFIG FROM SERVER
   useEffect(() => {
-    fetch("http://66.42.56.21:5000/api/deposit/config")
+    fetch("https://iran-backend.onrender.com0/api/deposit/config")
       .then(res => res.json())
       .then(data => {
         if (data) setConfig(data);

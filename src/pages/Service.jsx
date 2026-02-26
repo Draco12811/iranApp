@@ -18,7 +18,7 @@ export default function Service() {
 
   const handleTelegram = () => {
     // Apna Telegram link yahan dalein
-   fetch("http://127.0.0.1:5000/api/cs-link")
+   fetch("https://iran-backend.onrender.com/.../api/cs-link")
   .then(r => r.json())
   .then(d => window.open(d.link || "#", "_blank"));
   };

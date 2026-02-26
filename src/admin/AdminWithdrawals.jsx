@@ -7,7 +7,7 @@ export default function AdminWithdrawals() {
   const [showHistory, setShowHistory] = useState(false);
 
   const loadWithdrawals = () => {
-    fetch("http://66.42.56.21:5000/api/admin/withdrawals")
+    fetch("https://iran-backend.onrender.com0/api/admin/withdrawals")
       .then(r => r.json())
       .then(data => {
         const sorted = [...data].sort((a, b) => b.timestamp - a.timestamp);
@@ -20,7 +20,7 @@ export default function AdminWithdrawals() {
   }, []);
 
   const handleAction = async (id, status) => {
-    await fetch("http://66.42.56.21:5000/api/admin/withdraw-action", {
+    await fetch("https://iran-backend.onrender.com0/api/admin/withdraw-action", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ withdrawalId: id, action: status })

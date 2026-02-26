@@ -17,7 +17,7 @@ export default function AdminDeposits() {
 
   // ===== LOAD DATA =====
   const loadDeposits = () => {
-    fetch("http://66.42.56.21:5000/api/admin/deposits")
+    fetch("https://iran-backend.onrender.com0/api/admin/deposits")
       .then(r => r.json())
       .then(data => {
         // 🔥 NEWEST FIRST
@@ -29,7 +29,7 @@ export default function AdminDeposits() {
   useEffect(() => {
     loadDeposits();
 
-    fetch("http://66.42.56.21:5000/api/deposit/config")
+    fetch("https://iran-backend.onrender.com0/api/deposit/config")
       .then(r => r.json())
       .then(setConfig);
   }, []);
@@ -42,7 +42,7 @@ export default function AdminDeposits() {
       return;
     }
 
-    await fetch("http://66.42.56.21:5000/api/admin/save-deposit-config", {
+    await fetch("https://iran-backend.onrender.com0/api/admin/save-deposit-config", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(config)
@@ -56,7 +56,7 @@ export default function AdminDeposits() {
   // ===== APPROVE / REJECT =====
   const handleAction = async (id, status) => {
 
-    await fetch("http://66.42.56.21:5000/api/admin/deposit-action", {
+    await fetch("https://iran-backend.onrender.com0/api/admin/deposit-action", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ depositId: id, action: status })

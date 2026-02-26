@@ -39,7 +39,7 @@ export default function Deposit() {
     }
 
     // 🔥 ADMIN KO REQUEST SAVE
-    await fetch("http://66.42.56.21:5000/api/user/create-deposit", {
+    await fetch("https://iran-backend.onrender.com0/api/user/create-deposit", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

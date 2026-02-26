@@ -26,7 +26,7 @@ useEffect(() => {
     const parsed = JSON.parse(savedUser);
 
     try {
-      const res = await fetch("http://66.42.56.21:5000/api/admin/users");
+      const res = await fetch("https://iran-backend.onrender.com0/api/admin/users");
       const users = await res.json();
 
       const current = users.find(

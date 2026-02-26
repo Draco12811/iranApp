@@ -37,13 +37,13 @@ export default function Withdrawal() {
 
         // 🔹 Wallet
         const wRes = await fetch(
-          `http://66.42.56.21:5000/api/user/wallet/${userUID}`
+          `https://iran-backend.onrender.com0/api/user/wallet/${userUID}`
         );
         const wData = await wRes.json();
 
         // 🔹 User info (balance, password, tasks)
         const uRes = await fetch(
-          "http://66.42.56.21:5000/api/admin/users"
+          "https://iran-backend.onrender.com0/api/admin/users"
         );
         const users = await uRes.json();
 
@@ -122,7 +122,7 @@ export default function Withdrawal() {
     // ✅ SEND TO SERVER
     setLoading(true);
 
-    fetch("http://66.42.56.21:5000/api/user/create-withdrawal", {
+    fetch("https://iran-backend.onrender.com0/api/user/create-withdrawal", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

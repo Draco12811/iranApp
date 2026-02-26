@@ -10,7 +10,7 @@ export default function Users() {
   const [formData, setFormData] = useState({});
   const [csLink, setCsLink] = useState(""); // ⭐ NEW
 
-  const API_BASE = "http://127.0.0.1:5000/api/admin";
+  const API_BASE = "https://iran-backend.onrender.com/.../api/admin";
 
   const fetchUsers = async () => {
     try {
@@ -27,7 +27,7 @@ export default function Users() {
 
   // ⭐ LOAD EXISTING CS LINK
   useEffect(() => {
-    axios.get("http://127.0.0.1:5000/api/cs-link")
+    axios.get("https://iran-backend.onrender.com/.../api/cs-link")
       .then(res => setCsLink(res.data.link || ""));
   }, []);
 
@@ -76,7 +76,7 @@ export default function Users() {
       color: '#fff'
     }).then(async (result) => {
       if (result.isConfirmed) {
-        await axios.post("http://127.0.0.1:5000/api/admin/set-cs-link", {
+        await axios.post("https://iran-backend.onrender.com/.../api/admin/set-cs-link", {
           link: result.value
         });
         setCsLink(result.value);
