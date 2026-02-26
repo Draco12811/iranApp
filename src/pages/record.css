@@ -1,0 +1,161 @@
+.record-container {
+    background: #0d0d0d;
+    /* Fixed Height aur Overflow zaroori hai scrolling ke liye */
+    height: 100vh; 
+    overflow-y: auto; 
+    padding-bottom: 100px; 
+    color: #fff;
+    position: relative;
+
+    /* Scrollbar Hide karne ke liye (Chrome, Safari, Edge) */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+/* Chrome/Safari ke liye scrollbar gayab */
+.record-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- Loader Styling --- */
+.rk-loader-fix {
+    position: fixed; /* Absolute se behtar hai scrolling screen par */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0d0d0d;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premium-loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 179, 71, 0.1);
+    border-top: 3px solid #ffb347;
+    border-radius: 50%;
+    animation: spin-loader 0.8s linear infinite;
+}
+
+@keyframes spin-loader {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* --- Tabs Styling --- */
+.record-tabs {
+    display: flex;
+    background: #1a1a1a;
+    position: sticky; /* Content scroll ho par tabs upar hi rahein */
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 15px;
+    color: #888;
+    cursor: pointer;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-item.active {
+    color: #ffb347;
+    border-bottom: 2px solid #ffb347;
+    background: rgba(255, 179, 71, 0.05);
+}
+
+/* --- Order Cards & Content --- */
+.tab-content { 
+    padding: 15px; 
+}
+
+.order-card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+}
+
+.order-header { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+    margin-bottom: 12px; 
+}
+
+.order-header img { 
+    width: 55px; 
+    height: 55px; 
+    border-radius: 8px; 
+    object-fit: cover; 
+}
+
+.order-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-info h4 { 
+    margin: 0; 
+    font-size: 15px; 
+    color: #eee; 
+    word-break: break-word;
+}
+
+.status-badge {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-badge.unpaid { background: #ff4444; color: white; }
+.status-badge.done { background: #00c853; color: white; }
+
+.order-body .row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #bbb;
+}
+
+.text-gold { color: #ffb347; }
+
+.time-stamp { 
+    font-size: 12.5px; 
+    color: #999; 
+    display: block; 
+}
+
+.submit-btn-glow {
+    width: 100%;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #ffb347, #ffcc33);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+.empty-state {
+    text-align: center;
+    margin-top: 100px;
+    color: #666;
+}

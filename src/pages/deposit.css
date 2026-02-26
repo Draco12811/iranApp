@@ -1,0 +1,122 @@
+/* src/pages/deposit.css */
+
+.rk-page-fixed {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #ffffff;
+}
+
+/* Header Styling */
+.rk-dep-header {
+    background: #0b0b0b;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.rk-dep-header .title {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.back-btn {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.back-btn:active {
+    transform: scale(0.9);
+}
+
+/* Main Container Wrapper */
+.rk-wrap {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Input Card Styling */
+.input-card {
+    transition: border-color 0.3s ease;
+}
+
+.input-card:focus-within {
+    border-color: #f3ba2f !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Quick Selection Grid */
+.quick-grid button {
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.quick-grid button:active {
+    transform: scale(0.95);
+}
+
+.quick-grid button.active {
+    background: #f3ba2f !important;
+    color: #000 !important;
+    border-color: #f3ba2f !important;
+}
+
+/* Instructions / Notes Section */
+.dep-notes {
+    line-height: 1.6;
+}
+
+/* Main Action Button */
+.rk-next-btn {
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rk-next-btn:hover {
+    filter: brightness(1.1);
+}
+
+.rk-next-btn:active {
+    transform: scale(0.98);
+}
+
+/* Payment Info Specific Styling */
+.amount-focus {
+    border: 1px dashed rgba(243, 186, 47, 0.3);
+}
+
+.qr-frame {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.addr-input {
+    transition: background 0.2s ease;
+}
+
+.addr-input:active {
+    background: #222 !important;
+}
+
+/* Loader Spinner Animation */
+.spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(243, 186, 47, 0.1);
+    border-left-color: #f3ba2f;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}

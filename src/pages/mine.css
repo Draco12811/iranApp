@@ -1,0 +1,86 @@
+/* ✅ RESET & BASE */
+.rk-page { position: relative; min-height: 100vh; background: #000; color: #fff; overflow-x: hidden; font-family: Arial, sans-serif; }
+.rk-bg { position: absolute; inset: 0; background: radial-gradient(circle at top left, #8b0b1b 0%, #2b0a0f 45%, #050505 100%); z-index: 0; }
+.rk-wrap { position: relative; z-index: 2; max-width: 520px; margin: 0 auto; padding: 18px 16px 100px; }
+
+/* ✅ TOPBAR */
+.rk-title { font-size: 24px; font-weight: 800; color: #fff; }
+.gold-text { color: #f39c12; }
+
+/* ✅ CARDS */
+.rk-card { background: rgba(255, 255, 255, 0.08); border-radius: 18px; backdrop-filter: blur(10px); margin-bottom: 14px; padding: 15px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35); }
+
+/* ✅ USER SECTION */
+.rk-usercard { display: flex; align-items: center; justify-content: space-between; }
+.user-row { display: flex; align-items: center; gap: 12px; }
+.rk-avatar { width: 50px; height: 50px; border-radius: 50%; border: 2px solid #ffaa00; background-size: cover; background-position: center; cursor: pointer; }
+.rk-name { font-size: 15px; font-weight: 600; }
+.rk-invite { font-size: 11px; opacity: 0.7; margin-top: 2px; }
+
+/* ✅ APP DOWNLOAD BTN */
+.dl-btn { display: flex; flex-direction: column; align-items: center; background: rgba(243, 156, 18, 0.1); padding: 6px 12px; border-radius: 10px; border: 1px solid rgba(243, 156, 18, 0.3); cursor: pointer; }
+.dl-text { font-size: 9px; font-weight: 700; color: #f39c12; text-transform: uppercase; margin-top: 2px; }
+
+/* ✅ BALANCE SECTION */
+.rk-btitle-small { color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 8px; }
+.rk-balance-row-small { display: flex; align-items: baseline; gap: 8px; margin-bottom: 15px; }
+.rk-amount-small { font-size: 32px; font-weight: 700; }
+.rk-unit-small { font-size: 14px; opacity: 0.8; }
+
+/* ✅ BUTTONS */
+.rk-actions-compact { display: flex; gap: 10px; }
+.rk-btn-small { flex: 1; padding: 12px; border-radius: 12px; border: none; font-weight: 700; font-size: 15px; cursor: pointer; }
+.rk-btn-red { background: #b60b18; color: #fff; }
+.rk-btn-white { background: #fff; color: #000; }
+
+/* ✅ GRID SECTION */
+.rk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.rk-item { background: rgba(255, 255, 255, 0.05); border: none; border-radius: 14px; padding: 12px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; }
+.rk-ico-box { width: 35px; height: 35px; border-radius: 8px; display: flex; justify-content: center; align-items: center; font-size: 18px; flex-shrink: 0; background: rgba(255, 170, 0, 0.1); color: #ffaa00; }
+.gold-grad { background: linear-gradient(135deg, #FFD700, #f39c12) !important; color: #000 !important; }
+.icon-red { background: rgba(255, 68, 68, 0.1) !important; color: #ff4444 !important; }
+.rk-item span { color: #fff; font-size: 14px; font-weight: 500; }
+/* ✅ JUST ALIGNMENT FIX (No Size Change) */
+.rk-userinfo { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; /* Name & Code Left Side */
+}
+
+.rk-card { 
+  text-align: left; /* Balance Card text Left Side */
+}
+
+.rk-balance-row-small { 
+  justify-content: flex-start; /* Amount Left Side */
+}
+/* Overlay background */
+.page-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* SMALL POPUP IMAGE */
+.full-img {
+  width: 180px;          /* 👈 size control */
+  height: 180px;
+  border-radius: 50%;    /* 👈 circle DP */
+  object-fit: cover;
+  border: 4px solid #f3ba2f;
+  box-shadow: 0 0 25px rgba(243,186,47,0.6);
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}

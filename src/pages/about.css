@@ -1,0 +1,400 @@
+/* GLOBAL WRAPPER */
+.about-page-wrapper {
+  background: linear-gradient(180deg, #4b0000 0%, #2a0000 40%, #000000 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* STICKY HEADER */
+.about-header {
+  padding: 18px 20px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid rgba(243, 156, 18, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 110;
+}
+
+.header-title { margin: 0; font-size: 1rem; letter-spacing: 2px; font-weight: 800; }
+.gold-text { color: #f39c12; }
+.back-icon { color: #f39c12; cursor: pointer; }
+
+/* MAIN SCROLL AREA */
+.scrollable-content { 
+    flex: 1; 
+    overflow-y: auto; 
+    padding-bottom: 60px;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* SECTION 1: SLIDER */
+.first-section { margin-top: 25px; }
+.section-label { 
+  padding: 0 20px; 
+  font-size: 0.9rem; 
+  color: #f39c12; 
+  display: flex; 
+  align-items: center; 
+  gap: 8px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.infinite-slider { display: flex; gap: 18px; overflow-x: auto; padding: 0 20px 20px 20px; }
+.premium-glass-card {
+  min-width: 290px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.img-box { height: 160px; }
+.img-box img { width: 100%; height: 100%; object-fit: cover; }
+.card-body { padding: 15px; }
+.card-body h4 { color: #f39c12; font-size: 0.85rem; margin-bottom: 5px; font-weight: 700; }
+.card-body p { font-size: 0.72rem; color: #bbb; line-height: 1.5; }
+
+/* --- NEW INSTITUTIONAL STYLING (The Detailing Part) --- */
+
+.content-block { 
+    margin: 15px 20px; 
+    padding: 22px; 
+    background: rgba(0,0,0,0.4); 
+    border-radius: 24px; 
+    border: 1px solid rgba(243, 156, 18, 0.15);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+}
+
+.mt-20 { margin-top: 20px; }
+.italic { font-style: italic; opacity: 0.8; }
+
+.body-text { 
+    font-size: 0.82rem; 
+    color: #dfdfdf; 
+    line-height: 1.7; 
+    text-align: justify;
+}
+
+/* Framework Items (Steps) */
+.framework-grid { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    margin-top: 15px; 
+}
+
+.framework-item {
+    background: rgba(255,255,255,0.03);
+    padding: 15px;
+    border-radius: 16px;
+    border-left: 3px solid #f39c12;
+}
+
+.framework-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.framework-header span {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #f39c12;
+    line-height: 1.3;
+}
+
+.sub-text {
+    font-size: 0.75rem;
+    color: #aaa;
+    line-height: 1.5;
+    margin-left: 28px;
+}
+
+/* Professional List */
+.professional-list {
+    margin: 15px 0;
+    padding-left: 5px;
+    list-style: none;
+}
+
+.professional-list li {
+    font-size: 0.78rem;
+    color: #ccc;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    display: flex;
+    align-items: center;
+}
+
+.professional-list li::before {
+  content: "→";
+  color: #f39c12;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* --- MAP & FOOTER SECTION --- */
+
+.official-map-wrapper { 
+    width: 100%; 
+    height: 180px; 
+    margin: 10px 0;
+    border-radius: 15px; 
+    overflow: hidden; 
+    border: 1px solid rgba(243, 156, 18, 0.3); 
+}
+.map-img-fixed { width: 100%; height: 100%; object-fit: cover; }
+
+.address-details p {
+    font-size: 0.75rem;
+    color: #bbb;
+    margin-top: 10px;
+}
+
+/* SUPPORT SECTION */
+.section-label-center {
+    text-align: center;
+    color: #f39c12;
+    font-size: 0.95rem;
+    margin: 20px 0;
+    font-weight: 600;
+}
+
+.support-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; padding: 0 20px; }
+.support-tile { 
+  background: rgba(255,255,255,0.05); 
+  padding: 18px 5px; 
+  border-radius: 18px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.7rem;
+  transition: 0.3s;
+}
+
+.support-tile:active { transform: scale(0.95); background: rgba(255,255,255,0.1); }
+.wa { color: #25D366; }
+.tg { color: #0088cc; }
+.ml { color: #f39c12; }
+
+/* FOOTER */
+.page-footer { text-align: center; font-size: 0.68rem; color: #666; padding: 40px 20px; line-height: 1.8; }
+.bottom-spacer { height: 30px; }
+
+/* MODAL */
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.94); display: flex; align-items: center; justify-content: center; z-index: 2000; padding: 25px; backdrop-filter: blur(10px); }
+.modal-card { background: #111; width: 100%; max-width: 320px; border-radius: 30px; padding: 35px 25px; text-align: center; position: relative; border: 1px solid #333; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.close-modal { position: absolute; top: 18px; right: 18px; color: #777; font-size: 22px; cursor: pointer;}
+.modal-header-icon { font-size: 45px; margin-bottom: 15px; }
+.action-btn { width: 100%; background: #f39c12; border: none; padding: 14px; border-radius: 15px; font-weight: 800; color: #000; margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 0.9rem; }
+
+/* UTILS */
+.green { color: #00ff88; flex-shrink: 0; margin-top: 3px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+/* SECURITY ALERT CARD STYLING */
+.security-alert-card {
+    margin: 20px;
+    padding: 25px;
+    background: linear-gradient(145deg, rgba(255, 0, 0, 0.05), rgba(0, 0, 0, 0.6));
+    border-radius: 28px;
+    border: 1px solid rgba(255, 50, 50, 0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.alert-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ff4d4d;
+    font-weight: 800;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.alert-icon { font-size: 1.2rem; animation: pulse 2s infinite; }
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.alert-intro {
+    font-size: 0.85rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.security-tips-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.tip-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.tip-item p {
+    font-size: 0.78rem;
+    color: #ccc;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.highlight-url {
+    color: #f39c12;
+    font-weight: 800;
+    text-decoration: underline;
+    background: rgba(243, 156, 18, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.alert-footer-text {
+    margin-top: 20px;
+    font-size: 0.75rem;
+    color: #888;
+    font-style: italic;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 15px;
+}
+/* --- PROFESSIONAL SCAM ALERT CARD CSS --- */
+.scam-alert-card {
+    margin: 20px;
+    padding: 24px;
+    background: linear-gradient(145deg, rgba(30, 0, 0, 0.9), rgba(10, 10, 10, 1));
+    border-radius: 28px;
+    border: 1px solid rgba(255, 68, 68, 0.3);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+}
+
+.scam-alert-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.scam-icon-main { font-size: 2.2rem; color: #ff4444; }
+
+.scam-title-group h3 {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    font-weight: 800;
+}
+
+.scam-badge-red {
+    display: inline-block;
+    background: #ff4444;
+    color: #fff;
+    font-size: 0.6rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 900;
+    margin-top: 5px;
+}
+
+.scam-intro-text {
+    font-size: 0.82rem;
+    color: #dfdfdf;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.scam-tip-box {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 18px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tip-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: #f39c12;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.tip-icon-gold { font-size: 1.1rem; }
+
+.scam-points-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scam-points-list li {
+    font-size: 0.78rem;
+    color: #bbb;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.scam-points-list li::before {
+    content: "●";
+    color: #ff4444;
+    position: absolute;
+    left: 0;
+    font-size: 0.7rem;
+    top: 2px;
+}
+
+.url-highlight {
+    color: #f39c12 !important;
+    font-weight: 800;
+    text-decoration: underline;
+    background: rgba(243, 156, 18, 0.15);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.scam-footer-alert {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.shield-icon-ok { color: #00ff88; font-size: 1.4rem; flex-shrink: 0; }
+
+.scam-footer-alert p {
+    font-size: 0.75rem;
+    color: #00ff88;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 0;
+}

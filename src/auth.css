@@ -1,0 +1,242 @@
+/* src/auth.css */
+.auth-container {
+    background: radial-gradient(circle at top, #5a0000 0%, #000000 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: rgba(18, 18, 18, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid #333;
+    text-align: center;
+    position: relative; 
+    padding-top: 50px; 
+    margin-top: -55px;
+}
+
+.auth-header h1 {
+    color: #f39c12;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.auth-header span {
+    color: #888;
+    display: block;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    width: 100%; /* Alignment barabar karne ke liye */
+    box-sizing: border-box;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box; /* Width fix karne ke liye */
+}
+
+/* Security Code Styling */
+.verify-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.verify-container input {
+    flex: 1; /* Input field baki jagah cover karegi */
+}
+
+.captcha-box {
+    background: #f39c12;
+    color: #000;
+    font-weight: 900;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-style: italic;
+    transform: skewX(-10deg); 
+    min-width: 90px;
+    justify-content: center;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #f39c12;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-footer {
+    margin-top: 20px;
+    color: #bbb;
+}
+
+.auth-footer span {
+    color: #f39c12;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Password Wrapper for Eye Icon */
+.password-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.password-wrapper input {
+    width: 100%;
+    padding-right: 40px !important;
+    box-sizing: border-box;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.eye-btn:hover {
+    color: #f39c12;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.toggle-password:hover {
+    color: #f39c12;
+}
+
+/* SweetAlert Dark Fix */
+.swal2-popup {
+    border: 1px solid #333 !important;
+    border-radius: 12px !important;
+}
+
+.swal2-title {
+    font-size: 18px !important;
+}
+.swal2-html-container {
+    font-size: 14px !important;
+}
+.swal2-styled {
+    padding: 7px 20px !important;
+    font-size: 14px !important;
+}
+
+/* Language Button & Overlay */
+.card-lang-btn, .card-lang-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 11px;
+    color: #f39c12;
+    border: 1px solid rgba(243, 156, 18, 0.3);
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.lang-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lang-modal {
+    background: #1a1a1a;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 12px;
+    padding: 15px;
+    color: white;
+}
+
+.lang-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lang-item {
+    background: #262626;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lang-item span b {
+    margin-right: 15px;
+    color: #888;
+}
+
+.lang-item.active {
+    border: 1px solid #f39c12;
+    color: #f39c12;
+}
+
+.guest-support-link, .customer-service {
+    cursor: pointer;
+    color: #f39c12;
+    font-weight: 700;
+    display: block;
+    margin-top: 10px;
+}
