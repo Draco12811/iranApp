@@ -53,8 +53,7 @@ export default function Register() {
 
     try {
 
-      await axios.post("https://iran-backend.onrender.com/.../api/auth/register", {
-        username: form.username.trim().toLowerCase(),
+await axios.post("https://iran-backend.onrender.com/api/auth/register", {
         password: form.password,
         inviteCode: FIXED_INVITE
       });
